@@ -52,7 +52,7 @@ trap __usher_dump EXIT
 
 Some notes on the above:
 * Changing the prompt is critical to this solution since not changing it would simply give iTerm another regular expression match.
-* The in-memory history is cleared (the history file is untouched).
+* `history -c` clears the history for this session (the history file is untouched).
 * A function is defined and bound to the `EXIT` trap. This function dumps the history after emitting a string that another iTerm trigger can watch for. Finally, it emits a string that signals to the coprocess that the output is done.
 * As a bonus, the current user and host are emitted as well. This is optional.
 
