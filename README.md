@@ -58,7 +58,7 @@ Some notes on the above:
 
 6. Check **Instant**.
 7. Click **+** to add another trigger.
-8. The **Regular Expression** must match the "begin" header. Here's an example:
+8. The **Regular Expression** must match the begin header. Here's an example:
 
 ```regexp
 ^# com\.matlowery\.usher\.begin$
@@ -82,3 +82,9 @@ done
 ```
 
 11. You can leave **Instant** unchecked.
+
+Some notes on the above:
+* This shell script reads each line on stdin until it reaches the end footer.
+* It appends each line to a file.
+
+And that's it. Login to a few hosts, run some commands, and check the contents of this file.
