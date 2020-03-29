@@ -39,7 +39,7 @@ if [[ ! $PS1 ]]; then
 fi
 PS1='➕[\u@\h:\W]\$ '
 history -c
-__hs_dump() {
+__usher_dump() {
     echo "# com.matlowery.usher.begin"
     sleep 1
     echo "# begin ${USER-$(whoami)}@${HOSTNAME-$(hostname -f)}"
@@ -47,7 +47,7 @@ __hs_dump() {
     echo "# end ${USER-$(whoami)}@${HOSTNAME-$(hostname -f)}"
     echo "# com.matlowery.usher.end"
 }
-trap __hs_dump EXIT
+trap __usher_dump EXIT
 ```
 
 Some notes on the above:
