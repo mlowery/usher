@@ -2,15 +2,15 @@
 
 (U)niversal (S)hell (H)istory - er
 
-Shell history is possibly the richest source of assistance in the terminal. It's better than a snippets manager (no work create a new snippet). It's better than documentation (your previous commands are already customized for your environment). It's better than a clipboard manager (since you might not have copied the entire command into the clipboard).
+Note: This project is just documentation. There are no other artifacts.
 
-But how does one capture history across hosts (ssh), shells (zsh, bash), and logins (root, shared logins, and personal accounts)?
+Shell history is possibly the richest source of assistance in the terminal. It's arguably better than a snippets manager (no work create a new snippet). It's arguably better than documentation (your previous commands are already customized for your environment). And it's arguably better than a clipboard manager (since you might not have copied the entire command into the clipboard).
 
-This project is more of a proof of concept and not fully formed. But I felt it was worthwhile to post what I have so far.
+But how does one capture history across hosts (ssh), shells (zsh, bash), and logins (root, shared logins, and personal accounts)? You could set up custom `.zshrc` or `.bashrc` but this may not be practical given the number of hosts, shells, and logins. And you certainly cannot do this with a shared login.
 
 ## Requirements
 
-* iTerm2 (and macOS)
+* [iTerm2](https://iterm2.com/) (and macOS)
 
 ## How It Works
 
