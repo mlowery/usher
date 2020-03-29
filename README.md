@@ -2,7 +2,7 @@
 
 (U)niversal (S)hell (H)istory - er
 
-Note: This project is just documentation. There are no other artifacts.
+Note: This project is just documentation :page_with_curl: . There are no other artifacts.
 
 Shell history is possibly the richest source of assistance in the terminal. It's arguably better than a snippets manager (no work to create a new snippet). It's arguably better than documentation (your previous commands are already customized for your environment). And it's arguably better than a clipboard manager (since you might not have copied the entire command into the clipboard).
 
