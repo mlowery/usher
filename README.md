@@ -16,8 +16,8 @@ But how does one capture history across hosts (ssh), shells (zsh, bash), and log
 
 Essentially, it works like this:
 
-1. Using an iTerm [trigger](https://www.iterm2.com/triggers.html), detect a shell prompt. Then inject some history-dumping shell code using iTerm **Send Text** action. This history-dumping code is triggered on shell exit.
-2. Using another iTerm trigger, detect the history dump. Then append it to a file using iTerm **Run Silent Coprocess** action.
+1. Using an iTerm [trigger](https://www.iterm2.com/triggers.html), detect a shell prompt. Then inject some history-dumping shell code using the iTerm **Send Text** action. This history-dumping code is triggered on shell exit.
+2. Using another iTerm trigger, detect the history dump. Then append the history to a file using the iTerm **Run Silent Coprocess** action.
 
 ## Installation
 
