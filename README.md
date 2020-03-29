@@ -4,9 +4,9 @@
 
 Note: This project is just documentation. There are no other artifacts.
 
-Shell history is possibly the richest source of assistance in the terminal. It's arguably better than a snippets manager (no work create a new snippet). It's arguably better than documentation (your previous commands are already customized for your environment). And it's arguably better than a clipboard manager (since you might not have copied the entire command into the clipboard).
+Shell history is possibly the richest source of assistance in the terminal. It's arguably better than a snippets manager (no work to create a new snippet). It's arguably better than documentation (your previous commands are already customized for your environment). And it's arguably better than a clipboard manager (since you might not have copied the entire command into the clipboard).
 
-But how does one capture history across hosts (ssh), shells (zsh, bash), and logins (root, shared logins, and personal accounts)? You could set up custom `.zshrc` or `.bashrc` but this may not be practical given the number of hosts, shells, and logins. And you certainly cannot do this with a shared login.
+But how does one capture history across hosts (ssh), shells (zsh, bash), and logins (root, shared logins, and personal accounts)? You could set up custom `.zshrc` or `.bashrc` files but this may not be practical given the number of hosts, shells, and logins. And you certainly cannot do this with a shared login.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Essentially, it works like this:
 
 1. In iTerm preferences, go to **Profiles** > *profile* > **Advanced** > **Triggers** > **Edit**.
 2. Click **+**.
-3. The **Regular Expression** will vary but here's an example:
+3. The **Regular Expression** will vary but here's an example to detect a CentOS prompt:
 
 ```regexp
 ^\[[\w\-]+@[\w\-]+ [^\s]+\][\#,\$]
