@@ -30,7 +30,7 @@ Essentially, it works like this:
 ```
 
 4. For **Action**, choose **Send Text**.
-5. For **Parameters**, below is an example for Bash. Be careful :warning: that whatever you put in this box cannot match the **Regular Expression**! Otherwise, you'll watch iTerm send text forever. Note also that this is presented for readability. For the actual value, convert to a single line with semicolons after each newline below. Finally, add `\n` to the end of the whole string.
+5. For **Parameters**, below is an example for Bash. Be careful :warning: that whatever you put in this box cannot match the **Regular Expression**! Otherwise, you'll watch iTerm send text forever. Note also that this is presented for readability. For the actual value, convert to a single line with semicolons after each newline below. Finally, add `\n` to the end of the whole string to have the shell run the command.
 
 ```bash
 if [[ ! $PS1 ]]; then
